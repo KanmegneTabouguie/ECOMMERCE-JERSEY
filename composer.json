@@ -1,0 +1,17 @@
+{
+    "name": "andre/e-commerce",
+    "description": "ecommerce site",
+    "autoload": {
+        "psr-4": {
+            "Andre\\ECommerce\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "andre"
+        }
+    ],
+    "require": {
+        "sendgrid/sendgrid": "^8.1"
+    }
+}

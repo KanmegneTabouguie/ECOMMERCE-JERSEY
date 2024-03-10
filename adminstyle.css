@@ -1,0 +1,126 @@
+/* adminstyle.css */
+/* Navbar */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background: linear-gradient(45deg, #17a2b8, #6617ab);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand span {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #17a2b8;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.nav-item.active .nav-link {
+    color: #17a2b8;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    margin-right: 15px;
+}
+
+.navbar-toggler {
+    border-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        background: linear-gradient(45deg, #17a2b8, #6617ab);
+        padding: 10px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 8px;
+    }
+}
+
+/* main */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.container {
+    background: linear-gradient(to right, #FF8C00, #FFD700);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-out;
+}
+
+.card {
+    animation: slideIn 0.5s ease-out;
+}
+
+.card-header {
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: #ffffff;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+.text-success {
+    color: #4CAF50;
+}
+
+.text-danger {
+    color: #FF0000;
+}
